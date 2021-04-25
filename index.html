@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Business card website</title>
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <p>Начало</p>
+  <div class="wrapper">
+    <header class="header">
+      <hr class="line1"></hr>
+      <div class="burger">
+        <input id="burger__toggle" type="checkbox" />
+        <label class="burger__btn" for="burger__toggle">
+          <span></span>
+        </label>
+      </div>
+      <nav class="menu">
+        <a class="menu__item" href="#">Мои навыки</a>
+        <a class="menu__item" href="#">Оставить заявку</a>
+        <a class="menu__item" href="#">Позвонить</a>
+      </nav>
+      <hr class="line2"></hr>
+      <div class="title">
+        <div class="title__h1">Разработка сайтов, игр и приложений</div>
+        <div class="title__p">Помогаю воплощать мечты в реальность</div>
+      </div>
+    </header>
+    <section class="why">
+      <h1 class="why__title">Почему вам стоит обратиться ко мне</h1>
+      <div class="why__heart">
+        <h2 class="why__heart__title">Индивидуальный подход</h1>
+        <p class="why__heart__text">Каждый клиент для меня особенный. Я тщательно изучаю, что ему необходимо, прежде, чем приступить к работе.</p>
+      </div>
+      <div class="why__price">
+        <h2 class="why__price__title">Разумные цены</h1>
+        <p class="why__price__text">Я предлагаю выгодные цены за безупречное выполнение работы и соблюдение сроков.</p>
+      </div>
+      <div class="why__result">
+        <h2 class="why__result__title">Отличный результат!</h1>
+        <p class="why__result__text">Я внимательно работаю над каждым проектом. Я очень люблю свою работу, поэтому вас обрадует результат проделанной работы.</p>
+      </div>
+      <a class="why__button" href="#">Получить консультацию</a>
+    </section>
+    <section class="can">
+      <h1 class="can__title">Что я могу</h1>
+      <div class="can__code">
+        <h2 class="can__code__title">Я умею писать валидный и семмантически верный код для вашего сайта или приложения</h1>
+        <p class="can__code__text">Ваш сайт и приложение будут верно работать, благодаря моей верстке</p>
+      </div>
+      <div class="can__js">
+        <h2 class="can__js__title">Я умею создавать игры и анимации с помощью JavaScript</h1>
+        <p class="can__js__text">Я свободно владею языком JavaScript и могу "оживить" ваш сайт и приложение</p>
+      </div>
+      <div class="can__react">
+        <h2 class="can__react__title">Я умею создавать приложения с помощью React</h1>
+        <p class="can__react__text">Благодаря моим навыкам, ваш сайт и приложение будут максимально удобными в использовании</p>
+      </div>
+    </section>
+    <section class="help">
+      <h1 class="help__title">Есть вопросы?</h1>
+      <div class="help__form">
+        <p class="help__form__text">Заполните, пожалуйста, эту форму и я обязательно свяжусь с вами</p>
+        <a class="help__form__name">Имя и фамилия</a>
+        <a class="help__form__phone">Номер телефона</a>
+        <a class="help__form__mail">e-mail</a>
+        <a class="help__form__button" href="#">Отправить</a>
+      </div>
+    </section>
+    <footer class="down">
+      <p class="down__text">Меня можно найти в социальных сетях:</p1>
+      <nav class="down__social">
+        <div class="down__social__in"></div>
+        <div class="down__social__insta"></div>
+        <div class="down__social__fb"></div>
+      </nav>
+      <p2 class="down__creator">2020 &copy; WebHero School
+    </footer>
+  </div>
 </body>
 </html>
