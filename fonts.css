@@ -4,38 +4,36 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'montserratblack';
-    src: url('fonts/montserrat-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'montserratbold';
-    src: url('fonts/montserrat-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'montserratextrabold';
-    src: url('fonts/montserrat-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'montserratmedium';
+    font-family: 'montserrat5';
     src: url('fonts/montserrat-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'montserratsemibold';
+    font-family: 'montserrat6';
     src: url('fonts/montserrat-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'montserrat7';
+    src: url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat8';
+    src: url('fonts/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat9';
+    src: url('fonts/montserrat-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: 'roboto';
     src: url('fonts/roboto-regular-webfont.woff') format('woff');
