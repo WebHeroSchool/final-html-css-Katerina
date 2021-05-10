@@ -9,8 +9,14 @@
 .header {
   display: block;
 }
-.line1, .line2 {
+.line1 {
   margin: -8px -8px 0 -8px;
+  border: 0;
+  height: 3px;
+  background: #330099;
+}
+.line2 {
+  margin: -5px -8px 0 -8px;
   border: 0;
   height: 3px;
   background: #330099;
@@ -23,7 +29,7 @@
 }
 .menu__item {
   position: relative;
-  margin-right: 41px;
+  margin-right: 43px;
   font: 800 17px/24px gilroy, arial, helvetica, sans-serif;
   color: #585858;
   text-decoration: none;
@@ -72,18 +78,18 @@
 }
 .title__one {
   margin: 0 0 8px 0;
-  font: 900 41px/49px montserrat9, arial, helvetica, sans-serif;
+  font: 900 40px/50px montserrat9, arial, helvetica, sans-serif;
   color: #330099;
   text-align: right;
 }
 .title__two {
-  margin: 0 0 0 37%;
-  font: 700 33px/37px montserrat7, arial, helvetica, sans-serif;
+  margin: 0 0 0 36%;
+  font: 700 32.5px/36px montserrat7, arial, helvetica, sans-serif;
   color: #fff;
   text-align: right;
 }
 .why {
-  padding: 90px 0;
+  padding: 93px 0;
   background: #f9f9f9;
 }
 .why__title {
@@ -94,11 +100,11 @@
 }
 .why__menu {
   display: flex;
-  margin-bottom: 89px;
+  margin-bottom: 93px;
 }
 .why__heart {
   position: relative;
-  margin: 58px 111px 0 130px;
+  margin: 58px 111px 0 120px;
   background: top center no-repeat url(img/heart.svg);
 }
 .why__heart-title {
@@ -132,7 +138,7 @@
 }
 .why__result {
   position: relative;
-  margin: 50px 129px 0 0;
+  margin: 50px 100px 0 0;
   background: top no-repeat url(img/result.svg);
 }
 .why__result-title {
@@ -149,11 +155,11 @@
 }
 .why__button {
   display: inline-block;
-  margin: 0 35%;
+  margin: 0 37.8%;
   font: 800 20px/24px montserrat8, arial, helvetica, sans-serif;
   color: #ffda45;
   background: #330099;
-  padding: 21px 37px 20px 37px;
+  padding: 21px 37px 20px 33px;
   text-align: center;
   text-decoration: none;
   border-radius: 50px;
