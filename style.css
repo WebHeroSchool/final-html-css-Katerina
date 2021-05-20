@@ -70,6 +70,16 @@
 .menu__burger {
   display: none;
 }
+.burger__item {
+  position: relative;
+  font: 600 18px/25px gilroy, arial, helvetica, sans-serif;
+  color: #330099;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+.burger__item:hover {
+  opacity: 0.5;
+}
 .title {
   padding: 153px 130px 11% 52%;
   background: top left no-repeat url(img/title.svg);
@@ -107,17 +117,17 @@
 }
 .why__menu {
   display: flex;
-  margin-bottom: 93px;
+  margin-bottom: 95px;
 }
 .why__heart {
   position: relative;
-  margin: 58px 110px 0 125px;
+  margin: 58px 110px 0 128px;
   background: top center no-repeat url(img/heart.svg);
 }
 .why__heart-title {
-  margin: 105px 8px 10px 8px;
+  margin: 105px 8px 10px 10px;
   font: 900 30px/37px montserrat9, arial, helvetica, sans-serif;
-  font-size: 2.18vw;
+  font-size: 2.14vw;
   color: #585858;
   text-align: center;
 }
@@ -129,7 +139,7 @@
 }
 .why__price {
   position: relative;
-  margin: 50px 78px 31px 0;
+  margin: 50px 77px 31px 0;
   background: top no-repeat url(img/price.svg);
 }
 .why__price-title {
@@ -167,10 +177,10 @@
 .why__button {
   display: inline-block;
   margin: 0 0 0 38%;
-  font: 800 20px/24px montserrat8, arial, helvetica, sans-serif;
+  font: 800 19.9px/24px montserrat8, arial, helvetica, sans-serif;
   color: #ffda45;
   background: #330099;
-  padding: 21px 37px 20px 33px;
+  padding: 23px 35px 18px 35px;
   text-align: center;
   text-decoration: none;
   border-radius: 50px;
@@ -548,6 +558,42 @@
     content: '';
     top: 9px;
   }
+  .burger__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    padding-top: 170px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFDA45;
+    box-shadow: 1px 0px 6px rgb(0 0 0 / 20%);
+  }
+  .burger__item {
+    display: block;
+    padding: 12px 24px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  #burger__toggle:checked ~ .burger__btn > span {
+    transform: rotate(45deg);
+  }
+  #burger__toggle:checked ~ .burger__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #burger__toggle:checked ~ .burger__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #burger__toggle:checked ~ .burger__box {
+    visibility: visible;
+    left: 0;
+  }
   .title {
     padding: 80px 55px 11% 30%;
   }
@@ -674,6 +720,9 @@
   .menu__burger {
     margin-right: 20px;
   }
+  .burger__item {
+    font-size: 25px;
+  }
   .title {
     padding: 65px 35px 9% 30%;
   }
@@ -733,30 +782,13 @@
     transition: opacity .5s;
   }
   .menu__burger {
-    position: relative;
-    display: block;
     margin-right: 23px;
-    z-index: 100;
-  }
-  #burger__toggle {
-    position: absolute;
-    opacity: 0;
-  }
-  .burger__btn {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    cursor: pointer;
-    z-index: 1;
   }
   .burger__btn > span,
   .burger__btn > span::before,
   .burger__btn > span::after {
-    display: block;
-    position: absolute;
     width: 23px;
     height: 3px;
-    background: #330099;
   }
   .burger__btn > span::before {
     content: '';
@@ -910,10 +942,7 @@
     transition: opacity .5s;
   }
   .menu__burger {
-    position: relative;
-    display: block;
     margin-right: 15px;
-    z-index: 100;
   }
   .title {
     padding: 26px 30px 125px 10%;
@@ -925,13 +954,14 @@
   .title__one-2 {
     display: block;
     margin: 0;
-    font: 900 20.1px/24px montserrat9, arial, helvetica, sans-serif;
+    font: 900 20.3px/24px montserrat9, arial, helvetica, sans-serif;
+    font-size: 6.37vw;
     color: #330099;
     text-align: right;
   }
   .title__two {
     margin: 0 0 0 25%;
-    font: 700 17.1px/19px montserrat7, arial, helvetica, sans-serif;
+    font: 700 17.2px/19px montserrat7, arial, helvetica, sans-serif;
   }
   .why {
     padding: 49px 0;
@@ -966,7 +996,7 @@
   }
   .why__price-title {
     margin: 5px 79px 4px 80px;
-    font: 900 16.6px/20px montserrat9, arial, helvetica, sans-serif;
+    font: 900 16.1px/20px montserrat9, arial, helvetica, sans-serif;
   }
   .why__price-text {
     font: 500 16px/20px montserrat5, arial, helvetica, sans-serif;
@@ -974,7 +1004,7 @@
   }
   .why__result {
     padding-top: 55px;
-    margin: 0 30px 35px 30px;
+    margin: 0 30px 31px 30px;
     background-size: 21%;
   }
   .why__result-title {
@@ -992,7 +1022,8 @@
     font-size: 5.8vw;
   }
   .why__button {
-    font: 800 15.5px/19px montserrat8, arial, helvetica, sans-serif;
-    margin: 0 29px;
+    font: 800 15.8px/19px montserrat8, arial, helvetica, sans-serif;
+    margin: -2px 29px 0;
+    padding: 19px 21px 17px 21px;
   }
 }
