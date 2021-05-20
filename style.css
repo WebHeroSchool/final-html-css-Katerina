@@ -78,9 +78,12 @@
 }
 .title__one {
   margin: 0 0 8px 0;
-  font: 900 40px/50px montserrat9, arial, helvetica, sans-serif;
+  font: 900 40.2px/50px montserrat9, arial, helvetica, sans-serif;
   color: #330099;
   text-align: right;
+}
+.title__one-2 {
+  display: none;
 }
 .title__two {
   margin: 0 0 0 36%;
@@ -96,8 +99,11 @@
 .why__title {
   margin: 0;
   text-align: center;
-  font: 900 31px/37px montserrat9, arial, helvetica, sans-serif;
+  font: 900 30.5px/37px montserrat9, arial, helvetica, sans-serif;
   color: #585858;
+}
+.why__title-2 {
+  display: none;
 }
 .why__menu {
   display: flex;
@@ -105,12 +111,13 @@
 }
 .why__heart {
   position: relative;
-  margin: 58px 105px 0 120px;
+  margin: 58px 110px 0 125px;
   background: top center no-repeat url(img/heart.svg);
 }
 .why__heart-title {
-  margin: 107px 8px 10px 8px;
-  font: 900 31px/37px montserrat9, arial, helvetica, sans-serif;
+  margin: 105px 8px 10px 8px;
+  font: 900 30px/37px montserrat9, arial, helvetica, sans-serif;
+  font-size: 2.18vw;
   color: #585858;
   text-align: center;
 }
@@ -122,12 +129,12 @@
 }
 .why__price {
   position: relative;
-  margin: 50px 70px 31px 0;
+  margin: 50px 78px 31px 0;
   background: top no-repeat url(img/price.svg);
 }
 .why__price-title {
   margin: 113px 70px 27px 69px;
-  font: 900 31px/37px montserrat9, arial, helvetica, sans-serif;
+  font: 900 29px/37px montserrat9, arial, helvetica, sans-serif;
   color: #585858;
   text-align: center;
 }
@@ -143,7 +150,7 @@
   background: top no-repeat url(img/result.svg);
 }
 .why__result-title {
-  margin: 115px 83px 10px 83px;
+  margin: 113px 83px 10px 83px;
   font: 900 30px/37px montserrat9, arial, helvetica, sans-serif;
   color: #585858;
   text-align: center;
@@ -886,7 +893,7 @@
 
 @media (max-width: 360px) {
   .title {
-    padding: 25px 30px 11% 10%;
+    padding: 25px 15px 11% 15%;
     background-position: left -30px top;
   }
 }
@@ -909,33 +916,48 @@
     z-index: 100;
   }
   .title {
-    padding: 27px 30px 122px 10%;
+    padding: 26px 30px 125px 10%;
     background: top no-repeat url(img/mtitle.svg);
   }
   .title__one {
+    display: none;
+  }
+  .title__one-2 {
+    display: block;
     margin: 0;
-    font: 900 20.5px/24px montserrat9, arial, helvetica, sans-serif;
+    font: 900 20.1px/24px montserrat9, arial, helvetica, sans-serif;
+    color: #330099;
+    text-align: right;
   }
   .title__two {
     margin: 0 0 0 25%;
-    font: 700 17px/20px montserrat7, arial, helvetica, sans-serif;
+    font: 700 17.1px/19px montserrat7, arial, helvetica, sans-serif;
   }
   .why {
     padding: 49px 0;
   }
   .why__title {
-    margin: 0 76px 0 74px;
+    display: none;
+  }
+  .why__title-2 {
+    display: block;
+    margin: 0 74px 0 72px;
+    font: 900 16.4px/20px montserrat9, arial, helvetica, sans-serif;
+    text-align: center;
+    color: #585858;
   }
   .why__heart {
     padding-top: 45px;
-    margin: 40px 34px 33px 31px;
+    margin: 40px 34px 35px 32px;
     background-size: 20%;
   }
   .why__heart-title {
-    margin: 8px 47px 5px 46px;
+    margin: 8px 47px 3px 46px;
+    font: 900 16.6px/20px montserrat9, arial, helvetica, sans-serif;
   }
   .why__heart-text {
-    font: 500 18px/20px montserrat5, arial, helvetica, sans-serif;
+    font: 500 16px/20px montserrat5, arial, helvetica, sans-serif;
+    font-size: 5.77vw;
   }
   .why__price {
     padding-top: 53px;
@@ -943,10 +965,12 @@
     background-size: 20%;
   }
   .why__price-title {
-    margin: 5px 79px 3px 80px;
+    margin: 5px 79px 4px 80px;
+    font: 900 16.6px/20px montserrat9, arial, helvetica, sans-serif;
   }
   .why__price-text {
-    font: 500 18px/20px montserrat5, arial, helvetica, sans-serif;
+    font: 500 16px/20px montserrat5, arial, helvetica, sans-serif;
+    font-size: 5.8vw;
   }
   .why__result {
     padding-top: 55px;
@@ -962,9 +986,10 @@
   .why__result-text-2 {
     display: block;
     margin: 0;
-    font: 500 18px/20px montserrat5, arial, helvetica, sans-serif;
+    font: 500 16.5px/20px montserrat5, arial, helvetica, sans-serif;
     color: #585858;
     text-align: center;
+    font-size: 5.8vw;
   }
   .why__button {
     font: 800 15.5px/19px montserrat8, arial, helvetica, sans-serif;
